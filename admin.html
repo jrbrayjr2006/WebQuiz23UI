@@ -13,6 +13,34 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle=".navbar-collapse"></button>
+            <a class="navbar-brand" href="#">Web Quiz 23</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li class="active">
+                    <a href="#">Quiz Maker</a>
+                </li>
+                <li>
+                    <a href="#">Quiz List</a>
+                </li>
+                <li>
+                    <a href="#">Help</a>
+                </li>
+                <li>
+                    <a href="index.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <div class="container">
     <form class="form-horizontal" id="quizMakerFrm">
         <fieldset>
@@ -51,7 +79,7 @@
                 <label class="col-md-4 control-label" for="questionId">Question ID</label>
                 <div class="col-md-4">
                     <input id="questionId" name="questionId" placeholder="placeholder" class="form-control input-md" type="text">
-                    <span class="help-block">help</span>
+                    <span class="help-block">Type in a numeric question ID</span>
                 </div>
             </div>
 
@@ -60,7 +88,22 @@
                 <label class="col-md-4 control-label" for="questionText">Question Text</label>
                 <div class="col-md-4">
                     <input id="questionText" name="questionText" placeholder="Type your question here" class="form-control input-md" type="text">
-                    <span class="help-block">help</span>
+                    <span class="help-block">Type your question above</span>
+                </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="selectbasic">Option Code</label>
+                <div class="col-md-4">
+                    <select id="selectbasic" name="selectbasic" class="form-control">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                        <option value="D">Option D</option>
+                        <option value="E">Option E</option>
+                    </select>
+                    <span class="help-block">Select an option code for a possible answer to the question</span>
                 </div>
             </div>
 
@@ -69,11 +112,12 @@
                 <label class="col-md-4 control-label" for="questionOption">Question Option</label>
                 <div class="col-md-4">
                     <input id="questionOption" name="questionOption" placeholder="Add an option here" class="form-control input-md" type="text">
-                    <span class="help-block">help</span>
+                    <span class="help-block">Type the text of the option the user will see</span>
                 </div>
             </div>
 
             <!-- Appended Input-->
+            <!--
             <div class="form-group">
                 <label class="col-md-4 control-label" for="appendedtext">Question Option</label>
                 <div class="col-md-4">
@@ -81,7 +125,16 @@
                         <input id="appendedtext" name="appendedtext" class="form-control" placeholder="placeholder" type="text">
                         <span class="input-group-addon">Add Option</span>
                     </div>
-                    <p class="help-block">help</p>
+                    <p class="help-block">Type in an answer option for the question</p>
+                </div>
+            </div>
+            -->
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="answerId">Answer Code</label>
+                <div class="col-md-4">
+                    <input id="answerId" name="answerId" placeholder="Type in answer code here" class="form-control input-md" type="text">
+                    <span class="help-block">The answer code should match one of the options you created</span>
                 </div>
             </div>
             <!-- Button (Double) -->
