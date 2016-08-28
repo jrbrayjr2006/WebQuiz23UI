@@ -8,14 +8,32 @@
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/webquiz23.css">
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta http-equiv="refresh" content="0; url=login.html" />
 </head>
-<body>
+<body onload="loadFunction()">
 <div class="container">
-    <span>Loading...</span>
+    <div id="splashDiv">
+        <h1 class="loadheader">Loading...</h1>
+    </div>
+
+    <div class="loader" id="loader"></div>
 </div>
+
+<script>
+    var myVar;
+
+    function loadFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("splashDiv").style.display = "block";
+    }
+</script>
 </body>
 </html>
