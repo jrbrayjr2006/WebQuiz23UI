@@ -1,0 +1,79 @@
+
+div.reveal h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+div.reveal p {
+    text-align: center;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+div.reveal input {
+    border-radius: 3px;
+}
+
+div.left-promo-column {
+    padding-right: 0;
+}
+
+div a.promo-left {
+    /* */
+    position: relative;
+    float: right;
+    width: 100%;
+    height: 1.8rem;
+    padding: 0.4rem;
+    font-weight: bold;
+}
+
+div a.promo-left:hover {
+    /* */
+    background-color: #ffffff;
+    color: #145eb8;
+}
+
+div.right-promo-column {
+    padding-left: 0;
+}
+
+div a.promo-right {
+    /* */
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 1.8rem;
+    padding: 0.4rem;
+    font-weight: bold;
+}
+
+div a.promo-right:hover {
+    /* */
+    background-color: #ffffff;
+    color: #145eb8;
+}
+
+/* first name field in modal should float right */
+input.input-float-right {
+    position: relative;
+    float: right;
+}
+
+button.subscribe {
+    background-color: #ffab00;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+#moreModal {
+    background-color: #145eb8;
+    color: #ffffff;
+}
+
+div.top-bar {
+    background-image: url("../img/top-bar-background.jpg");
+}
+
+li.menu-image {
+    padding: 0;
+}
