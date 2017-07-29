@@ -71,7 +71,8 @@ button.subscribe {
 }
 
 div.top-bar {
-    background-image: url("../img/top-bar-background.jpg");
+    /* background-image: url("../img/top-bar-background.jpg"); */
+    background-image: url("https://s3.amazonaws.com/jaydot2core/website-images/top-bar-summer-background.jpg");
 }
 
 li.menu-image {
